@@ -207,7 +207,7 @@ canvas {
 
 .message-modal {
   background-color: #419D78;
-  width: 540px;
+  /* width: 540px; */
   border-radius: 5px;
 }
 
