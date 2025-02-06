@@ -1,40 +1,49 @@
 /* Responsive */
+/* RESPONSIVE: Poner los botones en columna en móviles */
+@media (max-width: 768px) {
+    .answer-question {
+        flex-direction: column; /* Hace que los botones estén en columna */
+        gap: 10px; /* Reduce la separación entre botones */
+    }
+
+    .btn {
+        width: 200px; /* Asegura que los botones sean más compactos */
+        font-size: 1.4rem; /* Reduce el tamaño del texto */
+    }
+}
 @media (max-width: 1024px) {
     .header-name {
         font-size: 3.4rem;
     }
+
+    /* Botones en columna en tablets y móviles */
     .answer-question {
         flex-direction: column;
         gap: 15px;
     }
+
     .btn {
         width: 180px;
     }
-  }
-  
-  @media (max-width: 768px) {
-    .header-name {
-        font-size: 3rem;
-    }
-    .header-description {
-        font-size: 1.8rem;
-    }
-    .answer-question {
-        flex-direction: column;
-        gap: 10px;
-    }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+
+@media (max-width: 480px) {
     .header-name {
         font-size: 2.5rem;
     }
+
     .header-description {
         font-size: 1.6rem;
     }
-    .btn {
-        width: 150px;
-        font-size: 1.4rem;
+
+    .answer-question {
+        flex-direction: column !important; /* Hace que los botones estén en columna */
+        gap: 10px; /* Reduce la separación entre botones */
     }
-  }
-  
+
+    .btn {
+        width: 200px; /* Asegura que los botones sean más compactos */
+        font-size: 1.4rem; /* Reduce el tamaño del texto */
+    }
+}
