@@ -52,7 +52,8 @@ canvas {
 }
 .container .tenor-gif-embed {
   display: flex;
-  max-width: 250px;
+  max-width: 200px;
+  maring.top: 20px;
 }
 @keyframes changeColor {
   from {
