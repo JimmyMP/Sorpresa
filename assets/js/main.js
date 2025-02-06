@@ -49,17 +49,32 @@ function start() {
     popup.classList.remove("show");
   };
 
+  // Guardamos la posición inicial del botón al cargar la página
+  let initialX = btnNo.offsetLeft;
+  let initialY = btnNo.offsetTop;
+  console.log(initialX, initialY);
   btnNo.onmouseover = () => {
-    var screenWidth = window.innerWidth;
-    var screenHeight = window.innerHeight;
+      let moveRange = 500; // Rango de movimiento en píxeles
 
-    var newX = Math.random() * (screenWidth - btnNo.clientWidth);
-    var newY = Math.random() * (screenHeight - btnNo.clientHeight);
+      // Generar nuevas posiciones relativas al punto de inicio
+      let newX = initialX + (Math.random() * moveRange - moveRange / 2);
+      let newY = initialY + (Math.random() * moveRange - moveRange / 2);
 
-    btnNo.style.position = "absolute";
-    btnNo.style.left = `${newX}px`;
-    btnNo.style.top = `${newY}px`;
-};
+      // Asegurar que no se salga de la pantalla
+      let screenWidth = window.innerWidth;
+      let screenHeight = window.innerHeight;
+      let btnWidth = btnNo.offsetWidth;
+      let btnHeight = btnNo.offsetHeight;
+
+      newX = Math.max(10, Math.min(newX, screenWidth - btnWidth - 10));
+      newY = Math.max(10, Math.min(newY, screenHeight - btnHeight - 10));
+
+      // Aplicar nueva posición sin perder la referencia inicial
+      btnNo.style.position = "absolute";
+      btnNo.style.left = `${newX}px`;
+      btnNo.style.top = `${newY}px`;
+  };
+
 }
 
 start();
