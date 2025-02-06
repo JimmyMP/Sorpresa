@@ -4,8 +4,7 @@ const CONFIGDATA = {
     "El que no arriesga no gana (Usé trucos de sistemas)",
   buttonYes: "Si, pero tú organizas todo",
   buttonNo: "No, no deseo, no anhelo, no quiero",
-  buttonNo1: "No, no no quiero",
-  titleModar: "Pense que no llegaria tan lejos",
+  titleModar: "No pensé llegar tan lejos",
   descriptionModar:
-    "Sé que es muy espontaneo y espero nos dé el tiempo </br> Pero, sé que puedo hacerte pasar una linda noche de valentine uu </br> Iré a recogerte esa noche. ¡Ve como siempre, bonita! </br> Habrá una sorpresa</br> Atte: Jimmy",
+    "Sé que es muy espontaneo, solo quiero que la pasemnos bien,</br>sin presiones.</br> Pero, sé que puedo hacerte pasar una linda noche de valentine uu </br> Iré a recogerte esa noche. ¡Ve como siempre, bonita! </br> Habrá una sorpresa</br> Atte: Jimmy",
 };

@@ -28,7 +28,6 @@ function start() {
   document.querySelector(".header").innerHTML = `
         <h1 class="header-name">
             ${CONFIGDATA.titleHeader}
-            <i class="ti-heart"></i>
         </h1>
         <p class="header-description">${CONFIGDATA.descriptionHeader}
             <i class="ti-face-smile"></i>
@@ -52,7 +51,6 @@ function start() {
   // Guardamos la posición inicial del botón al cargar la página
   let initialX = btnNo.offsetLeft;
   let initialY = btnNo.offsetTop;
-  console.log(initialX, initialY);
   btnNo.onmouseover = () => {
       let moveRange = 500; // Rango de movimiento en píxeles
 
