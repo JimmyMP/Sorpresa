@@ -1,83 +1,40 @@
-/* Tablet */
-@media (min-width: 740px) and (max-width: 1024px) {
-    .container {
-        overflow-x: hidden;
-    }
+/* Responsive */
+@media (max-width: 1024px) {
     .header-name {
         font-size: 3.4rem;
     }
-    .content {
+    .answer-question {
+        flex-direction: column;
+        gap: 15px;
     }
-    .music-control {
-        opacity: .1;
+    .btn {
+        width: 180px;
     }
-    .btn--yes {
-        position: absolute;
-        top: 198px;
-        left: 60px;
-    }
-    .btn--no {
-        position: absolute;
-        top: 198px;
-        right: 70px;
-    }
-    .footer {
-        overflow: hidden;
-        /* height: 19rem; */
-        padding: 10px 0;
-    }
-}
-
-/* Mobile */
-@media (max-width: 739px) {
-    .header {
-        height: 192px;
-    }
+  }
+  
+  @media (max-width: 768px) {
     .header-name {
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 3rem;
     }
     .header-description {
-        font-size: 2rem;
-        line-height: 3.7rem;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        -webkit-line-clamp: 2;
-    }
-    .content {
-        padding: 0;
+        font-size: 1.8rem;
     }
     .answer-question {
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
     }
-    .btn--yes {
-        position: absolute;
-        width: var(--width-btn);
-        left: 30px;
-        top: 100px
+  }
+  
+  @media (max-width: 480px) {
+    .header-name {
+        font-size: 2.5rem;
     }
-    .btn--no {
-        width: var(--width-btn);
-        position: absolute;
-        top: 280px;
-        left: 30px;
+    .header-description {
+        font-size: 1.6rem;
     }
-    .message-modal {
-        width: 430px;
+    .btn {
+        width: 150px;
+        font-size: 1.4rem;
     }
-    .heading-name {
-        padding: 0 12px;
-    }
-    .heading-msg {
-        padding: 20px 20px;
-    }
-    .footer-modal {
-        display: flex;
-        justify-content: center;
-    }
-    .footer {
-        height: 6rem;
-        padding: 0;
-    }
-}
+  }
+  
