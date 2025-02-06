@@ -18,24 +18,7 @@
         font-size: 1.6rem;
     }
 }
-
-@media (max-width: 1024px) {
-    .header-name {
-        font-size: 3.4rem;
-    }
-
-    /* Botones en columna en tablets y móviles */
-    .answer-question {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .btn {
-        width: 180px;
-    }
-}
-
-
+/* 
 @media (max-width: 480px) {
     .header-name {
         font-size: 2.5rem;
@@ -54,4 +37,4 @@
         width: 200px; /* Asegura que los botones sean más compactos */
         font-size: 1.4rem; /* Reduce el tamaño del texto */
     }
-}
+} */

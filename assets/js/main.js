@@ -49,17 +49,17 @@ function start() {
     popup.classList.remove("show");
   };
 
-  btnNo.onclick = () => {
-    btnNo.style.top = 100 + "px";
-    btnYes.style.top = 280 + "px";
-  };
+  btnNo.onmouseover = () => {
+    var screenWidth = window.innerWidth;
+    var screenHeight = window.innerHeight;
 
-  btnNo.onmouseover = (e) => {
-    var x = Math.random() * e.relatedTarget.clientHeight * 0.9;
-    var y = Math.random() * e.relatedTarget.clientWidth * 0.9;
-    btnNo.style.top = x + "px";
-    btnNo.style.right = y + "px";
-  };
+    var newX = Math.random() * (screenWidth - btnNo.clientWidth);
+    var newY = Math.random() * (screenHeight - btnNo.clientHeight);
+
+    btnNo.style.position = "absolute";
+    btnNo.style.left = `${newX}px`;
+    btnNo.style.top = `${newY}px`;
+};
 }
 
 start();
