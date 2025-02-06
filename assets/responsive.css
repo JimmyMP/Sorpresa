@@ -2,15 +2,23 @@
 /* RESPONSIVE: Poner los botones en columna en móviles */
 @media (max-width: 768px) {
     .answer-question {
-        flex-direction: column; /* Hace que los botones estén en columna */
-        gap: 10px; /* Reduce la separación entre botones */
+        display: flex;
+        flex-direction: column; /* Asegura que los botones estén en columna */
+        justify-content: center;
+        align-items: center;
+        gap: 10px; /* Espacio entre los botones */
     }
 
-    .btn {
-        width: 200px; /* Asegura que los botones sean más compactos */
-        font-size: 1.4rem; /* Reduce el tamaño del texto */
+    .btn--yes, .btn--no {
+        position: relative; /* Quita la posición absoluta */
+        top: auto;
+        left: auto;
+        right: auto;
+        width: 200px; /* Ajusta el tamaño */
+        font-size: 1.6rem;
     }
 }
+
 @media (max-width: 1024px) {
     .header-name {
         font-size: 3.4rem;
